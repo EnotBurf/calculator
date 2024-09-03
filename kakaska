@@ -1,0 +1,26 @@
+def add(a, b):
+ return a + b
+
+def subtract(a, b):
+ return a - b
+
+def multiply(a, b):
+ return a * b
+
+def divide(a, b):
+ return a / b
+
+operation = input("Введите операцию: +, -, *, /")
+first_number = float(input("Введите первое число: "))
+second_number = float(input("Введите второе число: "))
+
+if operation == "+":
+ result = add(first_number, second_number)
+elif operation == "-":
+ result = subtract(first_number, second_number)
+elif operation == "*":
+ result = multiply(first_number, second_number)
+else:
+ result = divide(first_number, second_number)
+
+print("Результат:", result)
